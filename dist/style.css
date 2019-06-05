@@ -134,8 +134,34 @@ a {
     margin: 10px 0;
     background: white;
 }
+.skills-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1280px;
+    padding: 1em;
+    margin: auto;
+}
+.skill {
+    background: white;
+    border-radius: 5px;
+    margin: 20px;
+}
+.skill img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
 @media screen and (max-width: 768px) {
     .likenhate h3 {
         font-size: 1.5em;
+    }
+    .skill {
+        margin: 5px;
+    }
+    .skill img {
+        width: 150px;
+        height: 150px;
     }
 }

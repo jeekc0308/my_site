@@ -1,5 +1,6 @@
 import AOS from 'aos';
 import nav from './navigation';
+import './skills';
 import 'aos/dist/aos.css';
 AOS.init();
 (() => {
