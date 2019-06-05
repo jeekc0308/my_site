@@ -1,5 +1,5 @@
 import AOS from 'aos';
-import Bideo from 'bideo.js';
+import nav from './navigation';
 import 'aos/dist/aos.css';
 AOS.init();
 (() => {
@@ -8,22 +8,9 @@ AOS.init();
         t.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({
-                top: document.querySelector(e.target.dataset.to).offsetTop,
+                top: document.querySelector(e.target.dataset.to).offsetTop - nav.clientHeight,
                 behavior: 'smooth'
             })
         })
     }
-
-    const bv = new Bideo();
-    bv.init({
-        videoEl: document.getElementById("background_video"),
-        container: document.querySelector('body'),
-        resize: true,
-        src: [
-            {
-                src: "moon.mp4",
-                type: "video/mp4"
-            }
-        ]
-    })
 })();

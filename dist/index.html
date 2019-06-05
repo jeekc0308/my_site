@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,29 @@
     <title>Doyeong Kim</title>
 </head>
 <body>
+    <header>
+        <nav id="navigation" class="navigation">
+            <a class="menu-link" href="#">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </nav>
+    </header>
     <article>
-        <video id="background_video" loop muted poster="cover.png"></video>
-        <div class="box">
+        <section class="box">
+            <div class="video-wrapper">
+                <video id="background_video" height="auto" width="100%" loop muted poster="cover.jpg" autoplay>
+                    <source src="moon.mp4">
+                </video>
+            </div>
             <h1 class="title" data-aos="fade-down">
                 Hello, World!
             </h1>
             <a href="#" data-to="#info" class="link learn-more">자세히 보기</a>
-        </div>
-        <div class="article" id="info">
-            <h1 data-aos="fade-down">Info</h1>
+        </section>
+        <section class="article" id="info">
+            <h1 data-aos="fade-down" class="title">Info</h1>
             <div class="info-wrap">
                 <div class="info">
                     <h3 class="info-key" data-aos="zoom-in">
@@ -62,9 +75,9 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="article" id="like-n-hate">
-            <h1 data-aos="fade-down">좋아하는 것</h1>
+        </section>
+        <section class="article" id="like">
+            <h1 data-aos="fade-down" class="title">좋아하는 것</h1>
             <div class="likenhate-wrap">
                 <div class="likenhate" data-aos="zoom-out">
                     <img src="coding.jpg" alt="coding">
@@ -79,7 +92,10 @@
                     <h3>음악 듣기</h3>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="article" id="I-can">
+            <h1 class="title">Skills</h1>
+        </section>
     </article>
     <script src="bundle.js"></script>
 </body>
