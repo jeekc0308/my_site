@@ -10,11 +10,18 @@
 <body>
     <header>
         <nav id="navigation" class="navigation">
-            <a class="menu-link" href="#">
+            <a class="menu-link" href="#" id="menu-opener">
                 <div></div>
                 <div></div>
                 <div></div>
             </a>
+            <div id="background" class="background"></div>
+            <div id="menu" class="menu">
+                <a href="#" data-to="#info">소개</a>
+                <a href="#" data-to="#like">좋아하는 것</a>
+                <a href="#" data-to="#skills">할 수 있는 것</a>
+                <a href="#" data-to="#contact">연락처</a>
+            </div>
         </nav>
     </header>
     <article>
@@ -30,7 +37,7 @@
             <a href="#" data-to="#info" class="link learn-more">자세히 보기</a>
         </section>
         <section class="article" id="info">
-            <h1 data-aos="fade-down" class="title">Info</h1>
+            <h1 data-aos="fade-down" class="title">소개</h1>
             <div class="info-wrap">
                 <div class="info">
                     <h3 class="info-key" data-aos="zoom-in">
@@ -93,8 +100,8 @@
                 </div>
             </div>
         </section>
-        <section class="article" id="I-can">
-            <h1 class="title" data-aos="fade-down">Skills</h1>
+        <section class="article" id="skills">
+            <h1 class="title" data-aos="fade-down">할 수 있는 것</h1>
             <div class="skills-wrap">
                 <div class="skill" data-name="Javascript" data-aos="flip-up">
                     <img src="languages/js.png">
@@ -118,6 +125,12 @@
                     <img src="languages/aws.svg">
                 </div>
             </div>
+            <h3>And ETC</h3>
+        </section>
+        <section class="article" id="contact">
+            <h1 class="title" data-aos="fade-down">연락처</h1>
+            <h3 data-aos="fade-down">외주/문의 등</h3>
+            
         </section>
     </article>
     <script src="bundle.js"></script>
