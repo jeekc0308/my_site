@@ -4,12 +4,23 @@ body, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: 100;
 }
-body {
+
+html:before {
+    content: ' ';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
     background: url(https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D6478%252C4279%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1057%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-images%252F2018-11%252Fe69ff020-e6c4-11e8-bd9d-bcea848cea61%26client%3Da1acac3e1b3290917d92%26signature%3Da8a1fe91155fc6976115e97afe1cd113a1402e8f&client=amp-blogside-v2&signature=aada3621b8dfbd7d15f909cae8756590e12f288e);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+body {
+    
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
     overflow-x: hidden;
