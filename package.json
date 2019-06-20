@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "choreographer-js": "^1.1.0"
+    "choreographer-js": "^1.1.0",
+    "json-loader": "^0.5.7"
   }
 }
